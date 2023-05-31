@@ -121,8 +121,8 @@ clicksound = mixer.Sound('click.mp3')
 
 font.init()
 font = font.Font(None,70)
-wintext = font.render('Player 1 Won!',True,(0,0,255))
-losetext = font.render('Player 2 Won!',True,(255,0,0))
+wintext = font.render('Player 1 Wins!',True,(0,0,255))
+losetext = font.render('Player 2 Wins!',True,(255,0,0))
 
 a = 0
 level = 0
@@ -141,7 +141,7 @@ while game:
                     if i == buttonStart:
                         a = 1
                         finish = False
-                        ball.rect.x = 225
+                        ball.rect.x = 340
                         clicksound.play()
                     elif i == buttonEasy:
                         ball.x2speed = ball.speed
